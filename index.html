@@ -17,8 +17,8 @@ happy new year.
 <a-scene embedded arjs="debugUIEnabled:false;">
 
 <a-assets>
-    <a-asset-item id="sample-obj" src="model_obj/santa.obj"></a-asset-item>
-    <a-asset-item id="sample-mtl" src="model_obj/santa.mtl"></a-asset-item>
+    <a-asset-item id="santa-obj" src="model_obj/santa.obj"></a-asset-item>
+    <a-asset-item id="santa-mtl" src="model_obj/santa.mtl"></a-asset-item>
 </a-assets>
 
 
@@ -29,6 +29,7 @@ happy new year.
     <a-box position="0 0.5 0" wireframe="true"></a-box>
     <a-text value="Happy New Year!!" position="0 0.3 0" align="center" color="#FFC65D"></a-text>
     <a-sphere position="0.3 0.4 0" radius="1.25" color="#EF2D5E"></a-sphere>
+    <a-obj-model id="santa" src="#santa-obj" mtl="#santa-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
 </a-marker>
 
 <a-marker preset='custom' url="assets/marker2.patt">
