@@ -2,6 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<!-- Reading A-Frame -->
+<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+<!-- Reading AR.js -->
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
 <title>nenga2020</title>
 </head>
 
@@ -9,6 +13,18 @@
 <main>
 happy new year.
 </main>
+
+<a-scene embedded arjs="debugUIEnabled:false;">
+<!-- Entry marker -->
+<a-marker preset="hiro">
+<!-- Draw Wireframe -->
+    <a-box position="0 0.5 0" wireframe="true"></a-box>
+</a-marker>
+
+<!-- AR Camera -->
+<a-entity camera></a-entity>
+
+</a-scene>
 
 </body>
 </html>
