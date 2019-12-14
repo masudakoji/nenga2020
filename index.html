@@ -14,7 +14,7 @@
 happy new year.
 </main>
 
-<a-scene embedded arjs="debugUIEnabled:false;">
+<a-scene embedded arjs="debugUIEnabled:true;">
 
 <a-assets>
     <a-asset-item id="santa-obj" src="model_obj/santa/santa.obj"></a-asset-item>
@@ -27,7 +27,7 @@ happy new year.
 <a-marker preset="hiro">
 <!-- Draw Wireframe -->
     <a-box position="0 0.5 0" wireframe="true"></a-box>
-    <a-text value="Happy New Year!!" position="0 0.3 0" align="center" color="#FFC65D"></a-text>
+    <a-text value="ver. 1" position="0 0.3 0" align="center" color="#FFC65D"></a-text>
     <a-sphere position="0.3 0.4 0" radius="0.25" color="#EF2D5E"></a-sphere>
     <a-obj-model id="santa" src="#santa-obj" mtl="#santa-mtl" position="0 0 0" scale="0.7 0.7 0.7" rotation="0 0 0"></a-obj-model>
 </a-marker>
